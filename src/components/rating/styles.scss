@@ -1,0 +1,21 @@
+.react-rater {
+
+	&-star {
+		font-size: 25px;
+	}
+
+	.is-active,	
+	.will-be-active {
+		color: #cccc00 !important;
+
+	}
+	
+	.is-active-half,
+	.is-disabled {
+		color: #aaa;
+
+			&:before {
+				color: #cccc00 !important;
+			}
+	}
+}
