@@ -35,8 +35,7 @@ const Home = ({ movies, loading, fetchMovies, fetchMoviesByTerm }) => {
       }
     } else {
       handleCalls(fetchMoviesByTerm, term);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }   
   }, [term, newRating]);
 
   const regularRating = newRating / 2;
