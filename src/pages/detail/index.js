@@ -28,8 +28,7 @@ const Detail = ({ movie, loading, fetchMovieById }) => {
     }
   }, [fetchMovieById, location]);
 
-  const transformRating =
-    movie && movie.vote_average > 1 ? movie.vote_average / 2 : 1;
+  const transformRating = movie && movie.vote_average > 1 ? movie.vote_average / 2 : 1;
 
   return (
     <div className="movie-card jumbotron mt-4">
