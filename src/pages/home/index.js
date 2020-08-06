@@ -19,8 +19,7 @@ const Home = ({ movies, loading, fetchMovies, fetchMoviesByTerm }) => {
   const [term, setTerm] = useState('');
   const [newRating, setRating] = useState(null);
 
-  const handleCalls = async (fetchFn, query, lessThan) =>
-    fetchFn(query, newRating && lessThan);
+  const handleCalls = (fetchFn, query, lessThan) => fetchFn(query, newRating && lessThan);
 
   useEffect(() => {
     if (newRating) {
