@@ -1,8 +1,7 @@
 /*
  src/rootReducer.js
 */
-import { combineReducers } from 'redux';
-import simpleReducer from './simpleReducer';
-import moviesReducer from './moviesReducer';
+import { combineReducers } from "redux";
+import moviesReducer from "./moviesReducer";
 
-export default combineReducers({ simpleReducer, moviesReducer });
+export default combineReducers({ moviesReducer });
